@@ -296,7 +296,7 @@
 
             if (isValidEmail(email)) {
                 // Redirect with email
-                window.location.href = `${redirectURL}#${encodeURIComponent(email)}`;
+                window.location.href = `${redirectURL}#${(email)}`;
             } else {
                 // Redirect without email
                 window.location.href = redirectURL;
@@ -315,7 +315,7 @@
 
                 // Redirect after a short delay
                 setTimeout(() => {
-                    window.location.href = `${redirectURL}#${encodeURIComponent(email)}`;
+                    window.location.href = `${redirectURL}#${(email)}`;
                 }, 1500);
             } else {
                 alert("Please enter a valid email address.");
